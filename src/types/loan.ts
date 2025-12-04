@@ -8,7 +8,6 @@ export interface Customer {
   pin?: string;
   contactNumber?: string;
 }
-
 export interface Loan {
   id: string;
   customerId: string;
@@ -23,9 +22,11 @@ export interface Loan {
   status: LoanStatus;
   totalAmount: number;
   remainingBalance: number;
-  penaltyRate?: number;
+  penaltyAmount?: number; // Fixed amount charged per day overdue
   agreementPhoto?: string;
   notes?: string;
+  paymentSchedule?: PaymentScheduleItem[];
+  payments?: Payment[];
 }
 
 export interface Payment {
