@@ -98,6 +98,8 @@ A comprehensive, mobile-first loan tracking and management system built with Rea
 3. Check collection rate
 4. Review loan statistics
 
+DATABASE (PostgreSQL/Supabase)
+
 ## Technical Details
 
 ### Built With
@@ -125,7 +127,6 @@ All data is stored in localStorage with the following structure:
 
 For production deployment, consider:
 - Backend API integration
-- Database (PostgreSQL/Supabase)
 - User authentication
 - Multi-user support
 - SMS/Email notifications
